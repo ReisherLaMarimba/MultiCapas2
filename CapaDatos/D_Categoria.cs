@@ -70,7 +70,7 @@ namespace CapaDatos
             SqlCommand cmd = new SqlCommand("Stored_EliminarCategoria", conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             conexion.Open();
-            cmd.Parameters.AddWithValue("@idCateogira", categoria.IdCategoria);
+            cmd.Parameters.AddWithValue("@idCategoria", categoria.IdCategoria);
         
 
             cmd.ExecuteNonQuery();
